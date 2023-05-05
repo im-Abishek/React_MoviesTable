@@ -57,6 +57,7 @@ class Movies extends Component {
       selectedGenre,
       sortColumn,
     } = this.state;
+    
     const filtered =
       selectedGenre && selectedGenre._id
         ? allMovie.filter((m) => m.genre._id === selectedGenre._id)
